@@ -323,6 +323,8 @@ export default class Editor {
       this.editor.setOption('theme', cookieTheme)
     }
 
+    this.editor.setOption('theme', 'default');
+
     var themeToggle = this.statusTheme.find('.ui-theme-toggle')
 
     const checkTheme = () => {
