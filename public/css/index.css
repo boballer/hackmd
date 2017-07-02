@@ -15,7 +15,7 @@ body {
     letter-spacing: 0.025em;
     line-height: 1.25;
     font-size: 18px;
-    height: auto !important;
+    /*height: auto !important;*/
     overflow-y: hidden !important;
     -webkit-overflow-scrolling: touch;
 }
@@ -43,6 +43,10 @@ body {
 }
 .CodeMirror-gutter-elt {
     text-align: center;
+    display: none;
+}
+.CodeMirror-gutters {
+  display: none;
 }
 .CodeMirror-linenumber {
 /*    opacity: 0.5;*/
@@ -97,6 +101,7 @@ body {
 }
 .CodeMirror-sizer {
     margin-bottom: 0px !important;
+    margin-left: 0px !important;
 }
 .CodeMirror-insert-match {
   background: lawngreen;
@@ -276,8 +281,8 @@ div[contenteditable]:empty:not(:focus):before{
     max-height: 40vh;
     overflow: auto;
 }
-.dropdown-menu.list::-webkit-scrollbar { 
-    display: none; 
+.dropdown-menu.list::-webkit-scrollbar {
+    display: none;
 }
 .dropdown-menu .emoji {
     margin-bottom: 0 !important;
@@ -364,7 +369,8 @@ div[contenteditable]:empty:not(:focus):before{
     border-top: 1px solid #343434;
     color: #ccc;
     position: relative;
-    display: block;
+    /*display: block;*/
+    display: none;
     box-sizing: border-box;
     font-size: 11px;
     line-height: 25px;
@@ -481,8 +487,8 @@ div[contenteditable]:empty:not(:focus):before{
     border: 1px solid #2893ef;
 }
 
-.status-bar .indent-width-input::-webkit-inner-spin-button, 
-.status-bar .indent-width-input::-webkit-outer-spin-button { 
+.status-bar .indent-width-input::-webkit-inner-spin-button,
+.status-bar .indent-width-input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }

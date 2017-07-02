@@ -533,7 +533,8 @@ function windowResizeInner (callback) {
 
 function checkLayout () {
   var navbarHieght = $('.navbar').outerHeight()
-  $('body').css('padding-top', navbarHieght + 'px')
+  // $('body').css('padding-top', navbarHieght + 'px')
+  $('body').css('padding-top', '0px')
 }
 
 function editorHasFocus () {
