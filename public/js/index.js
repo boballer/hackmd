@@ -456,13 +456,13 @@ $(document).ready(function () {
   // allow on all tags
   key.filter = function (e) { return true }
   key('ctrl+alt+e', function (e) {
-    changeMode(modeType.edit)
+    // changeMode(modeType.edit)
   })
   key('ctrl+alt+v', function (e) {
-    changeMode(modeType.view)
+    // changeMode(modeType.view)
   })
   key('ctrl+alt+b', function (e) {
-    changeMode(modeType.both)
+    // changeMode(modeType.both)
   })
   // toggle-dropdown
   $(document).on('click', '.toggle-dropdown .dropdown-menu', function (e) {
@@ -2086,7 +2086,8 @@ socket.on('refresh', function (data) {
       var urlMode = modeType[window.location.search.substr(1)]
       if (urlMode) appState.currentMode = urlMode
     }
-    changeMode(appState.currentMode)
+    // changeMode(appState.currentMode)
+    changeMode(modeType.edit)
     if (nocontent && !visibleXS) {
       editor.focus()
       editor.refresh()
